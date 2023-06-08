@@ -1,14 +1,13 @@
 package com.example.shoppingbasket;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.annotation.SessionScope;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
-@Scope(scopeName = "prototype")
+@SessionScope
 public class BasketServiceImpl {
     private Basket basket;
 
